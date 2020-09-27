@@ -44,40 +44,47 @@ int is_equal(void* key1, void* key2){
 }
 
 
-void insertMap(HashMap * map, char * key, void * value) {
-
+void insertMap(HashMap * map, char * key, void * value) 
+{
 
 }
 
-void enlarge(HashMap * map) {
+void enlarge(HashMap * map) 
+{
     enlarge_called = 1; //no borrar (testing purposes)
 
 
 }
 
 
-HashMap * createMap(long capacity) {
-
-    return NULL;
-}
-
-void eraseMap(HashMap * map,  char * key) {    
-
-
-}
-
-void * searchMap(HashMap * map,  char * key) {   
+HashMap * createMap(long capacity) 
+{
 
 
     return NULL;
 }
 
-void * firstMap(HashMap * map) {
+void eraseMap(HashMap * map,  char * key) 
+{    
+
+
+}
+
+void * searchMap(HashMap * map,  char * key) 
+{   
+
 
     return NULL;
 }
 
-void * nextMap(HashMap * map) {
+void * firstMap(HashMap * map) 
+{
+
+    return NULL;
+}
+
+void * nextMap(HashMap * map) 
+{
 
     return NULL;
 }
