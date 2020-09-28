@@ -57,11 +57,14 @@ while(posit <= map -> capacity)
     map->size++;
     break;
   }
-  if(k==(map->capacity - 1))
+  else
   {
-    k=0;
-  }
-k++;
+      if(k==(map->capacity - 1))
+      {
+        k=0;
+      }
+  }    
+  k++;
 }
 }
 
@@ -86,10 +89,14 @@ void eraseMap(HashMap * map,  char * key)
 {    
 
 
+//Pair->key= NULL;
+
 }
 
 void * searchMap(HashMap * map,  char * key) 
 {   
+
+
 
 
     return NULL;
