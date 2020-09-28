@@ -105,7 +105,7 @@ void * searchMap(HashMap * map,  char * key)
     }
     if(is_equal(map->buckets[i]->key, key))
     {
-      map->current = 0;
+      map->current= i;
       return map->buckets[i]->value;
     }
   }
