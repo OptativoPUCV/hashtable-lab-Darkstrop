@@ -95,11 +95,25 @@ void eraseMap(HashMap * map,  char * key)
 
 void * searchMap(HashMap * map,  char * key) 
 {   
+  long oxo= hash(key,map->capacity);
+  long i;
+  for(i=oxo;i< map->capacity ;i++)
+  {
+    if((map->buckets[i]==NULL)||(map->buckets[i]->key==NULL))
+    {
+     return NULL;
+    }
+    if(is_equal(map->buckets[i]->key, key))
+    {
+      return map->buckets[i]->value;
+    }
+  }
+  if((float)map->size/(float)map->capacity > 0.7)
+  {
+    enlarge(map); 
+  }
 
-
-
-
-    return NULL;
+   return NULL;
 }
 
 void * firstMap(HashMap * map) 
